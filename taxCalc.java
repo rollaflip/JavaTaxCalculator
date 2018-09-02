@@ -10,6 +10,11 @@ prices include tax already
 rev tax formula: line item / tax
 
 big decimal is more accurate than double
+
+check if exempt item
+  -apply 10% if not
+check if imported
+  -apply 5%
 */
 
 public class SalesTax{
