@@ -16,8 +16,9 @@ check if exempt item
 check if imported
   -apply 5%
 */
+import java.io.*;
 
-public class SalesTax{
+public class taxCalc{
   public static void main (String[]args){
     Scanner input = new Scanner(System.in);
 
