@@ -8,25 +8,31 @@ store in arr or obj
 pass obj to main
 */
 import java.io.*;
+import java.util.*;
 
-class receiptScanner {
+public class receiptScanner{
 
- private static final String FILENAME = "input.txt";
+//  private static final String FILENAME = "input.txt";
 
- public static void main(String[] args) {
+public static ArrayList<String> scanIt(String FILENAME) {
+  ArrayList<String> bill = new ArrayList<String>();
 
   try (
    FileReader fr = new FileReader(FILENAME);
-   BufferedReader br = new BufferedReader(fr)
+   BufferedReader br = new BufferedReader(fr);
   ){
 
    String line;
 
    while ((line = br.readLine()) != null) {
-    System.out.println(line);
+    // System.out.println(line);
+    bill.add(line);
    }
+
+  //  System.out.println(bill);
   } catch (IOException e) {
-   e.printStackTrace();
+    e.printStackTrace();
   }
+  return bill;
  }
 }

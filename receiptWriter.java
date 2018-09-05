@@ -1,11 +1,12 @@
 
 import java.io.*;
+import java.util.*;
 
 class receiptWriter{
 
   private static final String FILENAME = "output.txt";
 
-  public void saveIt(String printJob){
+  public static void writeIt(String printJob){
 
     try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME))) {
 
@@ -21,8 +22,4 @@ class receiptWriter{
 
     }
   }
-
-    public static void main(String[] args) {
-
-    }
 }
