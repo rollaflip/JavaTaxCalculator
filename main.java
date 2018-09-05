@@ -1,20 +1,22 @@
 /*
 Read: call receiptScanner
-
+  -place in cart by order
 store in temp array
-call receiptWriter
+call taxCalc
+print final receipt
+call ReceiptWriter: save to output file
 */
 import java.io.*;
 import java.util.*;
 
-public class main {
+public class Main {
 
-  public static void main (String[]args){
-  ArrayList<String> stuff = receiptScanner.scanIt("input.txt");
-  // System.out.println(stuff);
+  public static void main (String[] args){
+  ArrayList<String> stuff = ReceiptScanner.scanIt("input.txt");
+  // do computations here on array
 
   for(String thing : stuff) {
-    receiptWriter.writeIt(thing);
+    ReceiptWriter.writeIt(thing);
 
   }
   }

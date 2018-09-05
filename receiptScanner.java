@@ -10,7 +10,7 @@ pass obj to main
 import java.io.*;
 import java.util.*;
 
-public class receiptScanner{
+public class ReceiptScanner{
 
 //  private static final String FILENAME = "input.txt";
 
