@@ -1,7 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-public class Product{
+// Product is a child of ShoppingCart Class
+//new product is created from each line as scanned
+// method tax add : ads products tax to ShoppingCarts taxTotal
+// method costAdd: adds product total to ShoppingCarts totalCost
+
+public class Product extends ShoppingCart{
 
   // int quantity;
   // Boolean imported;

@@ -11,10 +11,9 @@ class ReceiptWriter{
     try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME, true))) {
 
       // String printJob = "This is the content to write into file\n";
-
       bw.write("\n" + printJob);
 
-      System.out.println("File: " + FILENAME + " overwritten with with new content");
+      // System.out.println("File: " + FILENAME + " overwritten with with new content");
 
     } catch (IOException e) {
 
